@@ -1,16 +1,15 @@
-# flutter_kit_example
+# FlutterKit
 
-Demonstrates how to use the flutter_kit plugin.
+[![build status](https://img.shields.io/travis/flutterchina/dio/vm.svg?style=flat-square)](https://travis-ci.org/flutterchina/dio)
+[![Pub](https://img.shields.io/pub/v/dio.svg?style=flat-square)](https://pub.dartlang.org/packages/dio)
+[![support](https://img.shields.io/badge/platform-flutter%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/flutterchina/dio)
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+FlutterKit 常用组件库
 
-A few resources to get you started if this is your first Flutter project:
+## 添加依赖
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+```yaml
+dependencies:
+  flutter_kit: ^2.1.x  // 请使用pub上2.1分支的最新版本
+```

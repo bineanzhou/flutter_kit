@@ -4,7 +4,7 @@
 [![Build Status](https://travis-ci.org/theyakka/fluro.svg?branch=master)](https://travis-ci.org/theyakka/fluro)
 [![support](https://img.shields.io/badge/platform-flutter%7Cdart%20vm-ff69b4.svg?style=flat-square)](https://github.com/flutterchina/dio)
 
-
+![FlutterKit](https://github.com/bineanzhou/flutter_kit/blob/master/image/logo.png)
 
 FlutterKit 常用组件库
 

@@ -20,7 +20,7 @@ dependencies:
   #获取packageInfo
   package_info: ^0.4.0+6
 
-  #动画
+  #动画 https://github.com/jogboms/flutter_spinkit
   flutter_spinkit: ^4.0.0
   #Router页面跳转
   fluro: ^1.5.1

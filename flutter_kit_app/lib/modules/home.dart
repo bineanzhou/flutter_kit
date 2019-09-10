@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_kit_app/config/theme_config.dart';
 import 'package:flutter_kit_app/modules/sample/sample_page.dart';
 import 'package:flutter_kit_app/utils/flutter_log.dart';
 
@@ -53,9 +54,11 @@ class _HomePageState extends State<HomePage> {
     FLog.d("build", tag: _TAG);
 
     return Scaffold(
-      body: IndexedStack(
-        index: _selectedIndex,
-        children: _list,
+      body: SafeArea(
+        child: IndexedStack(
+          index: _selectedIndex,
+          children: _list,
+        ),
       ),
       bottomNavigationBar: BottomNavigationBar(
         items: _myTabs,
@@ -67,7 +70,7 @@ class _HomePageState extends State<HomePage> {
         //fixed：固定
         type: BottomNavigationBarType.fixed,
 
-        fixedColor: Color(0xFFC91B3A),
+        fixedColor: ThemeConfig.primaryColor,
       ),
     );
   }

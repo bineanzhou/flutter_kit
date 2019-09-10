@@ -1,14 +1,25 @@
 import 'dart:async';
-import 'dart:convert';
+import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:flutter_kit/flutter_kit.dart';
 import 'package:flutter_kit_app/config/theme_config.dart';
 import 'package:flutter_kit_app/modules/home.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
-void main() => runApp(MyApp());
+void main(){
+  runApp(MyApp());
+  if(Platform.isAndroid){
+    SystemUiOverlayStyle style = SystemUiOverlayStyle(
+        statusBarColor: Colors.transparent,
+        ///这是设置状态栏的图标和字体的颜色
+        ///Brightness.light  一般都是显示为白色
+        ///Brightness.dark 一般都是显示为黑色
+        statusBarIconBrightness: Brightness.dark
+    );
+    SystemChrome.setSystemUIOverlayStyle(style);
+  }
+}
 
 class MyApp extends StatefulWidget {
   @override
@@ -22,7 +33,7 @@ class _MyAppState extends State<MyApp> {
   void initState() {
     super.initState();
     Future.delayed(
-        const Duration(seconds: 5),
+        const Duration(seconds: 3),
         () => setState(() {
               _isLoading = false;
             }));
@@ -54,7 +65,7 @@ class _MyAppState extends State<MyApp> {
       return Container(
         color: ThemeConfig.primaryColor,
         child: Center(
-          child: SpinKitPouringHourglass(color: Colors.white),
+          child: SpinKitFadingCube(color: Colors.white),
         ),
       );
     } else {

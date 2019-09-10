@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:opacity="opaque">
+    <item android:drawable="@android:color/white"/>
+    <item>
+        <bitmap
+            android:gravity="top"
+            android:src="@mipmap/splash_default"
+            />
+    </item>
+    <!-- 最下面的文字，注意这里有个 bottom 设置 -->
+    <item >
+        <bitmap
+            android:gravity="bottom"
+            android:src="@mipmap/splash_bottom" />
+    </item>
+
+</layer-list>

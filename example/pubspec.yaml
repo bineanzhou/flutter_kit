@@ -13,7 +13,20 @@ dependencies:
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^0.1.2
 
-  webview_flutter: ^0.3.13
+  #网络请求
+  dio: ^2.1.11
+  #设备信息
+  device_info: ^0.4.0+2
+  #获取packageInfo
+  package_info: ^0.4.0+6
+
+  #动画
+  flutter_spinkit: ^4.0.0
+  #Router页面跳转
+  fluro: ^1.5.1
+
+  flutter_kit:
+    path: ../
 
 dev_dependencies:
   flutter_test:
@@ -63,3 +76,5 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - assets/images/

@@ -18,7 +18,7 @@ class MarqueeText extends StatefulWidget {
     @required this.text,
     this.textStyle,
     this.scrollAxis: Axis.horizontal,
-    this.ratioOfBlankToScreen: 0.2,
+    this.ratioOfBlankToScreen: 0.25,
   }) : assert(
           text != null,
         );
@@ -59,9 +59,9 @@ class MarqueeTextState extends State<MarqueeText>
 
     FLog.d(
         "widgetWidth:$widgetWidth, screenWidth:$screenWidth maxScrollExtent:$maxScrollExtent pixels:$pixels");
-    if (maxScrollExtent <= widgetWidth) {
-      return;
-    }
+//    if (maxScrollExtent <= widgetWidth) {
+//      return;
+//    }
     timer = Timer.periodic(new Duration(milliseconds: _timerRest), (timer) {
       if (pixels + _moveDistance >= maxScrollExtent) {
         if (widget.scrollAxis == Axis.horizontal) {

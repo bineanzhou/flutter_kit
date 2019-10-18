@@ -24,8 +24,7 @@ class WidgetsPage extends StatelessWidget {
   Widget _getGridViewItemUI(BuildContext context, WidgetItem widgetItem) {
     return InkWell(
       onTap: () {
-//        showSnackBar(context, city);
-        Application.navigateTo(context, Routes.pathSamplePage);
+        Application.navigateTo(context, widgetItem.path);
 
       },
       child: Card(

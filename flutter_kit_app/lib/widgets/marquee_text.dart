@@ -1,7 +1,6 @@
 import 'dart:async';
 
 import 'package:flutter/material.dart';
-import 'package:flutter_kit_app/config/theme.dart';
 import 'package:flutter_kit_app/utils/flutter_log.dart';
 
 class MarqueeText extends StatefulWidget {

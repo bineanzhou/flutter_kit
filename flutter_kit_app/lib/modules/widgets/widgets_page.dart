@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kit_app/config/dimens.dart';
 import 'package:flutter_kit_app/modules/routers/application.dart';
-import 'package:flutter_kit_app/modules/routers/routers.dart';
 
 import 'model/widget_item.dart';
 

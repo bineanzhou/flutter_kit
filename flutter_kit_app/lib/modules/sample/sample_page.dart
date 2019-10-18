@@ -39,7 +39,7 @@ class _SamplePageStae extends BasePageState<SamplePage> {
       appBar: AppBar(
         brightness: Brightness.light,
         title: MarqueeText(
-          text: Routes.pathSamplePage,
+          text: Routes.samplePage,
 //          text: "dart",
           textStyle: new TextStyle(fontSize: 16.0),
           scrollAxis: Axis.horizontal,

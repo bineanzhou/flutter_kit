@@ -16,37 +16,37 @@ class WidgetItem {
       image: Assets.wgtContainer,
       name: "Container",
       desc: "绘制、定位、调整大小",
-      path: Routes.pathSamplePage,
+      path: Routes.containerPage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,
       name: "London",
       desc: "",
-      path: Routes.pathSamplePage,
+      path: Routes.samplePage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,
       name: "Vancouver",
       desc: "",
-      path: Routes.pathSamplePage,
+      path: Routes.samplePage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,
       name: "New York",
       desc: "",
-      path: Routes.pathSamplePage,
+      path: Routes.samplePage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,
       name: "Paris",
       desc: "",
-      path: Routes.pathSamplePage,
+      path: Routes.samplePage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,
       name: "Berlin",
       desc: "",
-      path: Routes.pathSamplePage,
+      path: Routes.samplePage,
     ));
     return list;
   }

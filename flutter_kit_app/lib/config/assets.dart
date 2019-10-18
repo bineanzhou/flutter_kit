@@ -5,5 +5,6 @@
  */
 
 class Assets{
-  static const String DEFAULT_IMAGE = 'assets/images/default_img.png';
+  static const String defaultImage = 'assets/images/default_img.png';
+  static const String wgtContainer = 'assets/images/wgt_container.png';
 }

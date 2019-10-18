@@ -10,6 +10,7 @@ import 'package:flutter_kit_app/config/assets.dart';
 import 'package:flutter_kit_app/modules/routers/application.dart';
 import 'package:flutter_kit_app/modules/routers/routers.dart';
 import 'package:flutter_kit_app/utils/flutter_log.dart';
+import 'package:flutter_kit_app/widgets/marquee_text.dart';
 
 class SamplePage extends StatefulWidget {
   @override
@@ -35,6 +36,15 @@ class _SamplePageStae extends BasePageState<SamplePage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      appBar: AppBar(
+        brightness: Brightness.light,
+        title: MarqueeText(
+          text: Routes.pathSamplePage,
+//          text: "dart",
+          textStyle: new TextStyle(fontSize: 16.0),
+          scrollAxis: Axis.horizontal,
+        ),
+      ),
       body: new Container(
         margin: new EdgeInsets.fromLTRB(10.0, 0.0, 10.0, 0.0),
         child: Column(
@@ -49,7 +59,7 @@ class _SamplePageStae extends BasePageState<SamplePage> {
             RaisedButton(
               padding: EdgeInsets.all(10.0),
               child: new Center(
-                  child: new Image.asset(Assets.DEFAULT_IMAGE,
+                  child: new Image.asset(Assets.defaultImage,
                       height: 180.0, width: 180.0)),
               onPressed: _onClick,
             ),

@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:flutter_kit_app/config/theme.dart';
 import 'package:flutter_kit_app/modules/home.dart';
+import 'package:flutter_kit_app/modules/routers/application.dart';
 import 'package:flutter_kit_app/utils/statusbar_util.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 
@@ -24,6 +25,7 @@ class _MyAppState extends State<MyApp> {
   @override
   void initState() {
     super.initState();
+    Application.init();
     Future.delayed(
         const Duration(seconds: 3),
         () => setState(() {

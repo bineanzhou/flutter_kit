@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kit_app/config/theme.dart';
 import 'package:flutter_kit_app/modules/sample/sample_page.dart';
+import 'package:flutter_kit_app/modules/widgets/widgets_page.dart';
 import 'package:flutter_kit_app/utils/flutter_log.dart';
 
 class HomePage extends StatefulWidget {
@@ -17,8 +18,7 @@ class _HomePageState extends State<HomePage> {
   List<Widget> _list = List();
 
   static List _tabData = [
-    {'text': '首页', 'icon': Icon(Icons.home)},
-    {'text': '赚钱', 'icon': Icon(Icons.monetization_on)},
+    {'text': 'Widget', 'icon': Icon(Icons.widgets)},
     {'text': '我的', 'icon': Icon(Icons.account_box)},
   ];
 
@@ -45,7 +45,7 @@ class _HomePageState extends State<HomePage> {
       ));
     }
 
-    _list..add(SamplePage())..add(SamplePage())..add(SamplePage());
+    _list..add(WidgetsPage())..add(SamplePage());
   }
 
   @override

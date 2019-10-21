@@ -1,3 +1,4 @@
+
 # FlutterKit
 
 [![Version](https://img.shields.io/badge/version-1.0.1-blue.svg)](https://pub.dartlang.org/packages/fluro)
@@ -23,5 +24,8 @@ flutter packages pub publish
 
 ## widgets
 
-![container_page](https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_container_page.jpg)
-![row_page](https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_row_page.jpg)
+ 
+<center>
+<img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_container_page.jpg">
+<img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_row_page.jpg">
+</center>

@@ -26,9 +26,9 @@ class WidgetItem {
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,
-      name: "Vancouver",
-      desc: "",
-      path: Routes.samplePage,
+      name: "Column",
+      desc: "垂直方向上排列 widget列表",
+      path: Routes.columnPage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,

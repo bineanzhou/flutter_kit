@@ -25,7 +25,7 @@ flutter packages pub publish
 ## widgets
 
  
-<center>
+<figure>
 <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_container_page.jpg">
 <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_row_page.jpg">
-</center>
+</figure>

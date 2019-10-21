@@ -19,10 +19,10 @@ class WidgetItem {
       path: Routes.containerPage,
     ));
     list.add(WidgetItem(
-      image: Assets.defaultImage,
-      name: "London",
-      desc: "",
-      path: Routes.samplePage,
+      image: Assets.wgtRow,
+      name: "Row",
+      desc: "水平排列子widget 列表",
+      path: Routes.rowPage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,

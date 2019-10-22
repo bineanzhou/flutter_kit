@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_kit_app/modules/sample/sample_page.dart';
+import 'package:flutter_kit_app/modules/widgets/button_page.dart';
 import 'package:flutter_kit_app/modules/widgets/column_page.dart';
 import 'package:flutter_kit_app/modules/widgets/container_page.dart';
 import 'package:flutter_kit_app/modules/widgets/icon_page.dart';
@@ -18,12 +19,19 @@ class Routes {
   static String imagePage = "lib/modules/widgets/image_page.dart";
   static String textPage = "lib/modules/widgets/text_page.dart";
   static String iconPage = "lib/modules/widgets/icon_page.dart";
+  static String buttonPage = "lib/modules/widgets/button_page.dart";
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = new Handler(
         // ignore: missing_return
         handlerFunc:
             (BuildContext context, Map<String, List<String>> params) {});
+
+    router.define(buttonPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return ButtonPage();
+      },
+    ));
 
     router.define(iconPage, handler: Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {

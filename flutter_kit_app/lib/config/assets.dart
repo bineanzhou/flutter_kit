@@ -12,4 +12,5 @@ class Assets{
   static const String wgtImage = 'assets/images/wgt_image.png';
   static const String wgtText = 'assets/images/wgt_text.png';
   static const String wgtIcon = 'assets/images/wgt_icon.png';
+  static const String wgtButton = 'assets/images/wgt_button.png';
 }

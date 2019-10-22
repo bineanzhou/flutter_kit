@@ -45,8 +45,14 @@ class WidgetItem {
     list.add(WidgetItem(
       image: Assets.wgtIcon,
       name: "Icon",
-      desc: "Material Design icon. ",
+      desc: "Material Design icon.",
       path: Routes.iconPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtButton,
+      name: "RaisedButton",
+      desc: "Material Design中的button",
+      path: Routes.buttonPage,
     ));
     return list;
   }

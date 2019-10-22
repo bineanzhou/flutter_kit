@@ -16,17 +16,19 @@ class ButtonPage extends StatelessWidget{
           children: <Widget>[
             const RaisedButton(
               onPressed: null,
+              padding: const EdgeInsets.all(10.0),
               child: Text(
                   'Disabled Button',
-                  style: TextStyle(fontSize: 20)
+                  style: TextStyle(fontSize: 24)
               ),
             ),
             const SizedBox(height: 30),
             RaisedButton(
+              padding: const EdgeInsets.all(10.0),
               onPressed: () {},
               child: const Text(
                   'Enabled Button',
-                  style: TextStyle(fontSize: 20)
+                  style: TextStyle(fontSize: 24)
               ),
             ),
             const SizedBox(height: 30),
@@ -47,7 +49,7 @@ class ButtonPage extends StatelessWidget{
                 padding: const EdgeInsets.all(10.0),
                 child: const Text(
                     'Gradient Button',
-                    style: TextStyle(fontSize: 20)
+                    style: TextStyle(fontSize: 24)
                 ),
               ),
             ),

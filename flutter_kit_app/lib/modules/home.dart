@@ -19,7 +19,7 @@ class _HomePageState extends State<HomePage> {
 
   static List _tabData = [
     {'text': 'Widget', 'icon': Icon(Icons.widgets)},
-    {'text': '我的', 'icon': Icon(Icons.account_box)},
+    {'text': 'Examples', 'icon': Icon(Icons.featured_play_list)},
   ];
 
   String appBarTitle = _tabData[0]['text'];

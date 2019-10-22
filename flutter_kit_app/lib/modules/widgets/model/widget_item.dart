@@ -25,16 +25,16 @@ class WidgetItem {
       path: Routes.rowPage,
     ));
     list.add(WidgetItem(
-      image: Assets.defaultImage,
+      image: Assets.wgtColumn,
       name: "Column",
       desc: "垂直方向上排列 widget列表",
       path: Routes.columnPage,
     ));
     list.add(WidgetItem(
-      image: Assets.defaultImage,
-      name: "New York",
-      desc: "",
-      path: Routes.samplePage,
+      image: Assets.wgtImage,
+      name: "Image",
+      desc: "一个显示图片的widget ",
+      path: Routes.imagePage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,

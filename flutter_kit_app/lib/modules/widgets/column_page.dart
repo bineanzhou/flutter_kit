@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_kit_app/modules/routers/routers.dart';
+import 'package:flutter_kit_app/utils/view_util.dart';
 import 'package:flutter_kit_app/widgets/marquee_text.dart';
 
 /**
@@ -19,15 +20,7 @@ class _ColumnPageState extends State<ColumnPage> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-        appBar: AppBar(
-          brightness: Brightness.light,
-          title: MarqueeText(
-            text: Routes.columnPage,
-//          text: "dart",
-            textStyle: new TextStyle(fontSize: 16.0),
-            scrollAxis: Axis.horizontal,
-          ),
-        ),
+        appBar: ViewUtil.createAppBar(Routes.columnPage),
         body: Column(
           children: <Widget>[
             Text('Deliver features faster'),

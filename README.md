@@ -73,7 +73,7 @@ flutter packages pub publish
         </td>
         <td >
         <center>
-        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_scaffold_page.jpg">
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_placeholder_page.jpg">
         </center>
         </td>
     </tr>

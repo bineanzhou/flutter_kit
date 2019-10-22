@@ -62,6 +62,13 @@ class WidgetItem {
       path: Routes
           .scaffoldPage,
     ));
+    list.add(WidgetItem(
+      image: Assets.wgtPlaceholder,
+      name: "Placeholder",
+      desc: "A widget that draws a box",
+      path: Routes
+          .placeholderPage,
+    ));
     return list;
   }
 }

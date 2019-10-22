@@ -37,10 +37,10 @@ class WidgetItem {
       path: Routes.imagePage,
     ));
     list.add(WidgetItem(
-      image: Assets.defaultImage,
-      name: "Paris",
-      desc: "",
-      path: Routes.samplePage,
+      image: Assets.wgtText,
+      name: "Text",
+      desc: "单一格式的文本",
+      path: Routes.textPage,
     ));
     list.add(WidgetItem(
       image: Assets.defaultImage,

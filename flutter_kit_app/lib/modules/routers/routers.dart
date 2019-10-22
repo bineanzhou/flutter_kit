@@ -7,6 +7,7 @@ import 'package:flutter_kit_app/modules/widgets/container_page.dart';
 import 'package:flutter_kit_app/modules/widgets/icon_page.dart';
 import 'package:flutter_kit_app/modules/widgets/image_page.dart';
 import 'package:flutter_kit_app/modules/widgets/row_page.dart';
+import 'package:flutter_kit_app/modules/widgets/scaffold_page.dart';
 import 'package:flutter_kit_app/modules/widgets/text_page.dart';
 
 class Routes {
@@ -20,12 +21,19 @@ class Routes {
   static String textPage = "lib/modules/widgets/text_page.dart";
   static String iconPage = "lib/modules/widgets/icon_page.dart";
   static String buttonPage = "lib/modules/widgets/button_page.dart";
+  static String scaffoldPage = "lib/modules/widgets/scaffold_page.dart";
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = new Handler(
         // ignore: missing_return
         handlerFunc:
             (BuildContext context, Map<String, List<String>> params) {});
+
+    router.define(scaffoldPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return ScaffoldPage();
+      },
+    ));
 
     router.define(buttonPage, handler: Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {

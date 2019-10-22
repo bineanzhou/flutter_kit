@@ -54,6 +54,14 @@ class WidgetItem {
       desc: "Material Design中的button",
       path: Routes.buttonPage,
     ));
+
+    list.add(WidgetItem(
+      image: Assets.wgtScaffold,
+      name: "Scaffold",
+      desc: "Material Design布局结构的基本实现",
+      path: Routes
+          .scaffoldPage,
+    ));
     return list;
   }
 }

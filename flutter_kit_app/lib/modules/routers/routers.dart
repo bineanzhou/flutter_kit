@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_kit_app/modules/sample/sample_page.dart';
 import 'package:flutter_kit_app/modules/widgets/column_page.dart';
 import 'package:flutter_kit_app/modules/widgets/container_page.dart';
+import 'package:flutter_kit_app/modules/widgets/icon_page.dart';
 import 'package:flutter_kit_app/modules/widgets/image_page.dart';
 import 'package:flutter_kit_app/modules/widgets/row_page.dart';
 import 'package:flutter_kit_app/modules/widgets/text_page.dart';
@@ -16,6 +17,7 @@ class Routes {
   static String columnPage = "lib/modules/widgets/column_page.dart";
   static String imagePage = "lib/modules/widgets/image_page.dart";
   static String textPage = "lib/modules/widgets/text_page.dart";
+  static String iconPage = "lib/modules/widgets/icon_page.dart";
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = new Handler(
@@ -23,11 +25,19 @@ class Routes {
         handlerFunc:
             (BuildContext context, Map<String, List<String>> params) {});
 
+    router.define(iconPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return IconPage();
+      },
+    ));
+
     router.define(textPage, handler: Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {
         return TextPage();
       },
-    )); router.define(imagePage, handler: Handler(
+    ));
+
+    router.define(imagePage, handler: Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {
         return ImagePage();
       },

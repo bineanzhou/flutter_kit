@@ -11,4 +11,5 @@ class Assets{
   static const String wgtColumn = 'assets/images/wgt_column.png';
   static const String wgtImage = 'assets/images/wgt_image.png';
   static const String wgtText = 'assets/images/wgt_text.png';
+  static const String wgtIcon = 'assets/images/wgt_icon.png';
 }

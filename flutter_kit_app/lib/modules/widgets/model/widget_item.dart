@@ -43,10 +43,10 @@ class WidgetItem {
       path: Routes.textPage,
     ));
     list.add(WidgetItem(
-      image: Assets.defaultImage,
-      name: "Berlin",
-      desc: "",
-      path: Routes.samplePage,
+      image: Assets.wgtIcon,
+      name: "Icon",
+      desc: "Material Design icon. ",
+      path: Routes.iconPage,
     ));
     return list;
   }

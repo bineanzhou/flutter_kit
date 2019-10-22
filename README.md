@@ -60,4 +60,21 @@ flutter packages pub publish
         </center>
         </td>
     </tr>
+    <tr>
+        <td >
+        <center>
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_button_page.jpg" >
+        </center>
+        </td>
+        <td >
+        <center>
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_text_page.jpg">
+        </center>
+        </td>
+        <td >
+        <center>
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_icon_page.jpg">
+        </center>
+        </td>
+    </tr>
 </table>

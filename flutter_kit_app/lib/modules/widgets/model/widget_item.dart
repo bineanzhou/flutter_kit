@@ -59,15 +59,31 @@ class WidgetItem {
       image: Assets.wgtScaffold,
       name: "Scaffold",
       desc: "Material Design布局结构的基本实现",
-      path: Routes
-          .scaffoldPage,
+      path: Routes.scaffoldPage,
     ));
     list.add(WidgetItem(
       image: Assets.wgtPlaceholder,
       name: "Placeholder",
       desc: "A widget that draws a box",
-      path: Routes
-          .placeholderPage,
+      path: Routes.placeholderPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtBottomnavigationbar,
+      name: "BottomNavigationBa",
+      desc: "底部导航条",
+      path: Routes.bottomnavigationbarPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtTabbar,
+      name: "TabBar",
+      desc: "水平选项卡",
+      path: Routes.tabbarPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtDrawer,
+      name: "Drawer",
+      desc: "水平滑动以显示导航面板",
+      path: Routes.drawerPage,
     ));
     return list;
   }

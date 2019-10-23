@@ -29,6 +29,21 @@ flutter packages pub publish
     <tr>
         <td >
         <center>
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_index1.jpg" >
+        </center>
+        </td>
+        <td >
+        <center>
+        </center>
+        </td>
+        <td >
+        <center>
+        </center>
+        </td>
+    </tr>
+    <tr>
+        <td >
+        <center>
         <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_container_page.jpg" >
         </center>
         </td>
@@ -74,6 +89,23 @@ flutter packages pub publish
         <td >
         <center>
         <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_placeholder_page.jpg">
+        </center>
+        </td>
+    </tr>
+    <tr>
+        <td >
+        <center>
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_bottomnavigationbar_page.jpg" >
+        </center>
+        </td>
+        <td >
+        <center>
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_tabbar_page.jpg">
+        </center>
+        </td>
+        <td >
+        <center>
+        <img src="https://github.com/bineanzhou/flutter_kit/blob/master/image/screen/screen_drawer_page.jpg">
         </center>
         </td>
     </tr>

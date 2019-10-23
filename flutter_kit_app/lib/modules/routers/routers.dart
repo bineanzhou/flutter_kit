@@ -1,14 +1,17 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_kit_app/modules/sample/sample_page.dart';
+import 'package:flutter_kit_app/modules/widgets/bottomnavigationbar_page.dart';
 import 'package:flutter_kit_app/modules/widgets/button_page.dart';
 import 'package:flutter_kit_app/modules/widgets/column_page.dart';
 import 'package:flutter_kit_app/modules/widgets/container_page.dart';
+import 'package:flutter_kit_app/modules/widgets/drawer_page.dart';
 import 'package:flutter_kit_app/modules/widgets/icon_page.dart';
 import 'package:flutter_kit_app/modules/widgets/image_page.dart';
 import 'package:flutter_kit_app/modules/widgets/placeholder_page.dart';
 import 'package:flutter_kit_app/modules/widgets/row_page.dart';
 import 'package:flutter_kit_app/modules/widgets/scaffold_page.dart';
+import 'package:flutter_kit_app/modules/widgets/tabbar_page.dart';
 import 'package:flutter_kit_app/modules/widgets/text_page.dart';
 
 class Routes {
@@ -24,12 +27,33 @@ class Routes {
   static String buttonPage = "lib/modules/widgets/button_page.dart";
   static String scaffoldPage = "lib/modules/widgets/scaffold_page.dart";
   static String placeholderPage = "lib/modules/widgets/placeholder_page.dart";
+  static String bottomnavigationbarPage = "lib/modules/widgets/bottomnavigationbar_page.dart";
+  static String tabbarPage = "lib/modules/widgets/tabbar_page.dart";
+  static String drawerPage = "lib/modules/widgets/drawer_page.dart";
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = new Handler(
         // ignore: missing_return
         handlerFunc:
             (BuildContext context, Map<String, List<String>> params) {});
+
+    router.define(drawerPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return DrawerPage();
+      },
+    ));
+
+    router.define(tabbarPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return TabBarPage();
+      },
+    ));
+
+    router.define(bottomnavigationbarPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return BottomNavigationBarPage();
+      },
+    ));
 
     router.define(placeholderPage, handler: Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {

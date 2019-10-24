@@ -1,18 +1,26 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_kit_app/modules/sample/sample_page.dart';
+import 'package:flutter_kit_app/modules/widgets/animatedlist_page.dart';
 import 'package:flutter_kit_app/modules/widgets/bottomnavigationbar_page.dart';
 import 'package:flutter_kit_app/modules/widgets/button_page.dart';
+import 'package:flutter_kit_app/modules/widgets/checkbox_page.dart';
 import 'package:flutter_kit_app/modules/widgets/column_page.dart';
 import 'package:flutter_kit_app/modules/widgets/container_page.dart';
+import 'package:flutter_kit_app/modules/widgets/date_page.dart';
 import 'package:flutter_kit_app/modules/widgets/drawer_page.dart';
+import 'package:flutter_kit_app/modules/widgets/expansion_page.dart';
 import 'package:flutter_kit_app/modules/widgets/icon_page.dart';
 import 'package:flutter_kit_app/modules/widgets/image_page.dart';
 import 'package:flutter_kit_app/modules/widgets/placeholder_page.dart';
+import 'package:flutter_kit_app/modules/widgets/radio_page.dart';
 import 'package:flutter_kit_app/modules/widgets/row_page.dart';
 import 'package:flutter_kit_app/modules/widgets/scaffold_page.dart';
+import 'package:flutter_kit_app/modules/widgets/slider_page.dart';
+import 'package:flutter_kit_app/modules/widgets/switch_page.dart';
 import 'package:flutter_kit_app/modules/widgets/tabbar_page.dart';
 import 'package:flutter_kit_app/modules/widgets/text_page.dart';
+import 'package:flutter_kit_app/modules/widgets/textfield_page.dart';
 
 class Routes {
   static String root = "/";
@@ -27,15 +35,72 @@ class Routes {
   static String buttonPage = "lib/modules/widgets/button_page.dart";
   static String scaffoldPage = "lib/modules/widgets/scaffold_page.dart";
   static String placeholderPage = "lib/modules/widgets/placeholder_page.dart";
-  static String bottomnavigationbarPage = "lib/modules/widgets/bottomnavigationbar_page.dart";
+  static String bottomnavigationbarPage =
+      "lib/modules/widgets/bottomnavigationbar_page.dart";
   static String tabbarPage = "lib/modules/widgets/tabbar_page.dart";
   static String drawerPage = "lib/modules/widgets/drawer_page.dart";
+  static String textFieldPage = "lib/modules/widgets/textfield_page.dart";
+  static String checkboxPage = "lib/modules/widgets/checkbox_page.dart";
+  static String radioPage = "lib/modules/widgets/radio_page.dart";
+  static String switchPage = "lib/modules/widgets/switch_page.dart";
+  static String sliderPage = "lib/modules/widgets/slider_page.dart";
+  static String datePage = "lib/modules/widgets/date_page.dart";
+  static String animatedlistPage = "lib/modules/widgets/animatedlist_page.dart";
+  static String expansionPage = "lib/modules/widgets/expansion_page.dart";
 
   static void configureRoutes(Router router) {
     router.notFoundHandler = new Handler(
         // ignore: missing_return
         handlerFunc:
             (BuildContext context, Map<String, List<String>> params) {});
+
+    router.define(expansionPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return ExpansionPage();
+      },
+    ));
+
+    router.define(animatedlistPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return AnimatedListPage();
+      },
+    ));
+
+    router.define(datePage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return DatePage();
+      },
+    ));
+
+    router.define(sliderPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return SliderPage();
+      },
+    ));
+
+    router.define(switchPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return SwitchPage();
+      },
+    ));
+
+    router.define(radioPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return RadioPage();
+      },
+    ));
+
+    router.define(checkboxPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return CheckboxPage();
+      },
+    ));
+
+    router.define(textFieldPage, handler: Handler(
+      handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+        return TextFieldPage();
+      },
+    ));
 
     router.define(drawerPage, handler: Handler(
       handlerFunc: (BuildContext context, Map<String, List<String>> params) {
@@ -113,8 +178,5 @@ class Routes {
         return SamplePage();
       },
     ));
-
   }
 }
-
-

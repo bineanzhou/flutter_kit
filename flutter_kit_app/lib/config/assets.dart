@@ -18,4 +18,10 @@ class Assets{
   static const String wgtBottomnavigationbar = 'assets/images/wgt_bottomnavigationbar.png';
   static const String wgtTabbar = 'assets/images/wgt_tabbar.png';
   static const String wgtDrawer = 'assets/images/wgt_drawer.png';
+  static const String wgtTextField = 'assets/images/wgt_textfield.png';
+  static const String wgtCheckbox = 'assets/images/wgt_checkbox.png';
+  static const String wgtRadio = 'assets/images/wgt_radio.png';
+  static const String wgtSwitch = 'assets/images/wgt_switch.png';
+  static const String wgtSlider = 'assets/images/wgt_slider.png';
+  static const String wgtDate = 'assets/images/wgt_date.png';
 }

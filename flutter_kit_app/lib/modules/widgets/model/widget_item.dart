@@ -85,6 +85,57 @@ class WidgetItem {
       desc: "水平滑动以显示导航面板",
       path: Routes.drawerPage,
     ));
+
+    list.add(WidgetItem(
+      image: Assets.wgtTextField,
+      name: "TextField",
+      desc: "文本输入框",
+      path: Routes.textFieldPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtCheckbox,
+      name: "Checkbox",
+      desc: "复选框",
+      path: Routes.checkboxPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtRadio,
+      name: "Radio",
+      desc: "单选框",
+      path: Routes.radioPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtSwitch,
+      name: "Switch",
+      desc: "On/off 用于切换一个单一状态",
+      path: Routes.switchPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtSlider,
+      name: "Slider",
+      desc: "滑块",
+      path: Routes.sliderPage,
+    ));
+    list.add(WidgetItem(
+      image: Assets.wgtDate,
+      name: "Date & Time Pickers",
+      desc: "日期&时间",
+      path: Routes.datePage,
+    ));
+
+    list.add(WidgetItem(
+      image: Assets.defaultImage,
+      name: "AnimatedList",
+      desc: "显示一个卡片列表",
+      path: Routes.animatedlistPage,
+    ));
+
+    list.add(WidgetItem(
+      image: Assets.defaultImage,
+      name: "Expansion",
+      desc: "生成二级或多级列表",
+      path: Routes.expansionPage,
+    ));
     return list;
   }
 }
